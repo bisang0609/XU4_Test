@@ -2,7 +2,7 @@
 # Test XU4 SJVA & Dietpi Setup
 echo "Time Zone Setup"
 apt install tzdata locales
-dpkg-reconfigure tzdata
+cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 dpkg-reconfigure locales
 
 echo " - Killing filebrowser process"
