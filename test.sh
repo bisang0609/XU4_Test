@@ -3,4 +3,4 @@
 echo "Sheel Test"
 #cd /tmp
 #apt install git
-:wq
+
