@@ -1,5 +1,5 @@
 #!/bin/bash
-# Test XU4 SJVA & OMV 5 Setup
+# Test XU4 SJVA & Dietpi Setup
 echo "Time Zone Setup"
 apt install tzdata locales
 cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
