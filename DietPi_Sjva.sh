@@ -188,7 +188,6 @@ exit 0
 EOF
 chmod +x /etc/init.d/sjva2
 update-rc.d sjva2 defaults
-cd /home/SJVA2
 
 echo "All END Reboot"
 sleep 2
