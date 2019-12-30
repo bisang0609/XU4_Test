@@ -1,6 +1,6 @@
 #!/bin/bash
 # Test XU4 SJVA & OMV 5 Setup
-echo"Time Zone Setup"
+echo "Time Zone Setup"
 apt install tzdata locales
 dpkg-reconfigure tzdata
 dpkg-reconfigure locales
