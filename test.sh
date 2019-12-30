@@ -21,13 +21,13 @@ apt update -y && apt -y upgrade && apt -y install armbian-config
 
 echo "Base Setup"
 apt install -y python python-pip python-dev python-setuptools git   
-apt install -y libffi-dev libxml2-dev libzbar-dev libxslt-dev libzbar0 zlib1g-dev
-apt install -y libssl-dev libjpeg8-dev 
+apt install -y libffi-dev libxml2-dev libzbar-dev libxslt-dev libzbar0 zlib1g-dev libssl-dev
+#apt install -y libjpeg8-dev 
 apt install -y python-lxml python-wheel python-wheel
 apt install -y dialog apt-utils vim
  
 echo "Java setting.."
-apt install default-jdk
+apt -y install default-jdk
 
 echo "Rclone setting.."
 apt -y install curl busybox
