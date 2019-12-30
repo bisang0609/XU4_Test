@@ -1,4 +1,6 @@
 #!/bin/bash
-# made by jassmusic @19.12.20
-cd /tmp
-apt install git
+# Test XU4 SJVA & OMV 5 Setup
+echo "Sheel Test"
+#cd /tmp
+#apt install git
+:wq
