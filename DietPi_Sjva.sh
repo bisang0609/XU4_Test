@@ -1,7 +1,7 @@
 #!/bin/bash
 # Test XU4 SJVA & Dietpi Setup
 echo "Time Zone Setup"
-apt install tzdata locales
+apt -y install tzdata locales
 cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 dpkg-reconfigure locales
 
@@ -17,10 +17,10 @@ nameserver 8.8.4.4
 EOF
 
 echo "Update & Upgrade"
-apt update -y && apt -y upgrade && apt -y install armbian-config
+apt update -y && apt -y upgrade 
 
 echo "Base Setup"
-apt install gcc
+apt install -y gcc
 apt install -y python python-pip python-dev python-setuptools git   
 apt install -y libffi-dev libxml2-dev libzbar-dev libxslt-dev libzbar0 zlib1g-dev libssl-dev
 apt install -y python-lxml python-wheel python-wheel
