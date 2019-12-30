@@ -187,7 +187,6 @@ exit 0
 EOF
 chmod +x /etc/init.d/sjva2
 update-rc.d sjva2 defaults
-cd /home/SJVA2
 
 echo "install OMV5"
 wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
