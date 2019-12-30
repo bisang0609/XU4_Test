@@ -2,10 +2,8 @@
 # Test XU4 SJVA & Dietpi Setup
 echo "Time Zone Setup"
 apt install tzdata locales
-cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-locale-gen en_US.UTF-8
-update-locale LANG=en_US.UTF-8 LC_MESSAGES=POSIX
-localectl set-locale LANG=en_US.UTF-8
+dpkg-reconfigure tzdata
+dpkg-reconfigure locales
 
 echo " - Killing filebrowser process"
 pgrep -a filebrowser | awk '{ print $1 }' | xargs kill -9 >/dev/null 2>&1
