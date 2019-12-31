@@ -187,7 +187,7 @@ chmod +x /etc/init.d/sjva2
 update-rc.d sjva2 defaults
 
 echo "ClouldShell2 LCD & Fan"
-apt -y i2c-tool install odroid-cloudshell cloudshell2-fan cloudshell-lcd
+apt -y install i2c-tools odroid-cloudshell cloudshell2-fan cloudshell-lcd
 
 echo "All END Reboot"
 sleep 2
